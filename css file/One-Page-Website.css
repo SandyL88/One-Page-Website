@@ -1,0 +1,118 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: silver;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation styles */
+nav {
+    text-align:center;
+	background-color:gold;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header styles */
+#home {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+}
+
+#home span {
+    font-size: 30px;
+    color: #333;
+	text-shadow: 1px 1px silver;
+	padding: 5px; 
+}
+
+/* Photo container styles */
+.photo-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+	width:300;
+	height:100;
+}
+
+.photo {
+    position: relative;
+    width: 100%;
+}
+
+.photo img {
+    width: 80%;
+    height: 80%;
+    display: block;
+	margin:0 auto;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo:hover .photo-overlay {
+    opacity: 1;
+}
+
+/* Reservation section styles */
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.form-spacer {
+    margin-bottom: 20px;
+}
+
+.terms {
+    font-style: italic;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
