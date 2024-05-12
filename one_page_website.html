@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title> Healthy Food | Resort</title>
 		<link rel="stylesheet" type="text/css" href=".\css file\One-Page-Website.css">
+
 	</head>
 	<body>
 	
@@ -24,11 +25,36 @@
 			<div>	
 				<div>
 					<span>Healthy Food</span>
+					<div class="left-column">
 					<h3>Healthy Food Study</h3>
+					
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/0z03xkwFbw4?si=cuHrlQVlJSgDoufI" title="YouTube video player" frameborder="1" 
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				
 				</div>
+				<div class="right-column">
+					<h3>List of dishes:</h3>
+					<div id="myModal" class="lightbox">
+						<span class="close-button" id="closeModal">&times;</span>
+						<img class="lightbox-image" id="lightboxImage">
+						<a class="prev" id="prevBtn">&#10094;Previous</a>
+						<a class="next" id="nextBtn">&#10095;Next</a>
+					</div>
+				
+					<div class="thumbnail-gallery">
+						<img src="./images/thumbnail_1.jpg" alt="Thumbnail 1" data-index="1" onclick="currentSlide(1)">
+						<img src="./images/thumbnail_2.jpg" alt="Thumbnail 2" data-index="2" onclick="currentSlide(2)">
+						<img src="./images/thumbnail_3.jpg" alt="Thumbnail 3" data-index="3" onclick="currentSlide(3)">
+						<img src="./images/thumbnail_4.jpg" alt="Thumbnail 4" data-index="4" onclick="currentSlide(4)">
+						<img src="./images/thumbnail_5.jpg" alt="Thumbnail 5" data-index="5" onclick="currentSlide(5)">
+						<img src="./images/thumbnail_6.jpg" alt="Thumbnail 6" data-index="6" onclick="currentSlide(6)">
+						<img src="./images/thumbnail_7.jpg" alt="Thumbnail 7" data-index="7" onclick="currentSlide(7)">
+						<img src="./images/thumbnail_8.jpg" alt="Thumbnail 8" data-index="8" onclick="currentSlide(8)">
+						<img src="./images/thumbnail_9.jpg" alt="Thumbnail 9" data-index="9" onclick="currentSlide(9)">
+					</div>
+				</div>
+			</div>
 			</div>
 		</div>
 		<!--END HOME-->
@@ -168,7 +194,7 @@
 				<div>
 					<h1>Reservation</h1>
 					<div>
-						<br/><b>Reserve your meal today!
+						<br/><br>Reserve your meal today!
 						<div>
 							<form action="" method="post">
 								<input class="rsvp" type="text" placeholder="First Name">
@@ -188,7 +214,7 @@
 			</div>
 		</section>
 		<!--End RSVP-->
-		
+		<script src="./JS/one_page_website.js"></script>
 		<!--FOOTER-->
 		<footer> 
 			www.healthy_food.food &nbsp;|&nbsp; &copy; 2016

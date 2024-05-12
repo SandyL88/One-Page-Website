@@ -13,6 +13,7 @@ body {
     background-color: lavender;
 }
 
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -56,7 +57,7 @@ ul li a {
 #home {
     background-color: #f9f9f9;
     padding: 30px;
-    text-align: center;
+    text-align: justify;
 }
 
 #home span {
@@ -65,7 +66,16 @@ ul li a {
 	text-shadow: 1px 1px silver;
 	padding: 3px; 
 	font-family:helvetica;
+    text-align: center;
 }
+
+.left-column {
+    margin-left: 20px;
+    width: 500px;
+    height: auto;
+}
+
+
 
 /* Photo container styles */
 .photo-container {
@@ -135,4 +145,100 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+.right-column {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 45%;
+    overflow: auto;
+    margin-top: 180px;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.thumbnail-gallery img {
+    width: calc(25% - 20px);
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.thumbnail-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 50%;
+    transform: translateX(50%);
+    width: 50%;
+    max-width: 800px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.lightbox .close-button:hover {
+    color: #ccc;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.lightbox .prev,
+.lightbox .next {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px 25px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.lightbox .prev {
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z'/></svg>");
+}
+
+.lightbox .next {
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/></svg>");
+}
+
+.lightbox .prev:hover,
+.lightbox .next:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lightbox .caption {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
