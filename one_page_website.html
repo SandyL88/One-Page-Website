@@ -35,11 +35,78 @@
 				</div>
 				<div class="right-column">
 					<h3>List of dishes:</h3>
-					<div id="myModal" class="lightbox">
+					
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+      <img src="./images/thumbnail_1.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+      <img src="./images/thumbnail_2.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+      <img src="./images/thumbnail_3.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+      <img src="./images/thumbnail_4.jpg" style="width:80%">
+    </div>
+
+	<div class="mySlides">
+		<div class="numbertext">4 / 9</div>
+		<img src="./images/thumbnail_4.jpg" style="width:80%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">4 / 9</div>
+		<img src="./images/thumbnail_4.jpg" style="width:80%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">5 / 9</div>
+		<img src="./images/thumbnail_5.jpg" style="width:80%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">6 / 9</div>
+		<img src="./images/thumbnail_6.jpg" style="width:80%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">7 / 9</div>
+		<img src="./images/thumbnail_7.jpg" style="width:80%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">8 / 9</div>
+		<img src="./images/thumbnail_8.jpg" style="width:80%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">9 / 9</div>
+		<img src="./images/thumbnail_9.jpg" style="width:80%">
+	</div>
+
+	<a class="prev" id="prevBtn" onclick="plusSlides(-1)">&#10094;Previous</a>
+	<a class="next" id="nextBtn" onclick="plusSlides(1)">&#10095;Next</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption">Healthy Dishes</p>
+    </div>
+					<div class="lightbox">
 						<span class="close-button" id="closeModal">&times;</span>
 						<img class="lightbox-image" id="lightboxImage">
-						<a class="prev" id="prevBtn">&#10094;Previous</a>
-						<a class="next" id="nextBtn">&#10095;Next</a>
+						
 					</div>
 				
 					<div class="thumbnail-gallery">
